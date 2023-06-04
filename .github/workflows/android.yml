@@ -29,6 +29,12 @@ jobs:
       - name: Build With Gradle
 
         run: |
+         
+         apt remove openjdk-11-jdk
+         
+         apt autoremove
+         
+         apt install openjdk17-jdk
 
           chmod +x gradlew
 
